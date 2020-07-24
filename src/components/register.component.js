@@ -17,7 +17,7 @@ class Register extends Component {
     }
 
     componentDidUpdate() {
-      axios.post("https://ki-reminder-api.herokuapp.com/" + "/createUser", {userId: this.state.userId}, {
+      axios.post("https://ki-reminder-api.herokuapp.com/createUser", {userId: this.state.userId}, {
         "Access-Control-Allow-Origin": "*"
       }).then((response) => {
         console.log("Response Data =", response.data)
