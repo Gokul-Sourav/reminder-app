@@ -43,7 +43,7 @@ class CreateReminders extends Component {
         }
 
         console.log(task);
-         axios.post('https://ki-reminder-api.herokuapp.com/' + "/createTask", task).then((response) => {
+         axios.post('https://ki-reminder-api.herokuapp.com' + "/createTask", task).then((response) => {
          console.log("Response Data =", response.data)
        })
     }
