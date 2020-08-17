@@ -53,8 +53,11 @@ jobs:
       - run:
           name: "Build app"
           command: npm run build
+      - run:
+          name: "list directory"
+          command: ls -la
       - persist_to_workspace:
-          root: workspace
+          root: ~/repo
           paths:
             - dist
             - package.json
