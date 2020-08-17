@@ -40,7 +40,7 @@ class Register extends Component {
             <img src={logo} alt="Logo" className="image-left"></img>
       </div>
       <div className="centering">
-      <h2>Reminders made easy !!</h2>
+      <h2>Reminders made Simple !!</h2>
       <TelegramLoginButton dataOnauth={this.responseTelegram} botName="akiranBot" />
         </div>
       </div>
