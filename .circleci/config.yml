@@ -61,10 +61,10 @@ jobs:
   deploy:
     <<: *defaults
     environment:
-      - STAGING_BUCKET: ''
-      - PRODUCTION_BUCKET: 'reminder-app'
-      - STAGING_DISTRIBUTION_ID: ''
-      - PRODUCTION_DISTRIBUTION_ID: 'E1TLR0CKCR3OPK'
+      - STAGING_BUCKET: ""
+      - PRODUCTION_BUCKET: "reminder-app"
+      - STAGING_DISTRIBUTION_ID: ""
+      - PRODUCTION_DISTRIBUTION_ID: "E1TLR0CKCR3OPK"
     steps:
       - attach_workspace:
           at: ~/repo
