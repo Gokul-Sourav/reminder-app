@@ -12,7 +12,9 @@ class GetReminders extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://ki-reminder-api.herokuapp.com' + '/tasks/' + `${this.props.id}`, {
+        axios.get('https://ki-reminder-api.herokuapp.com' 
+        + '/tasks/' 
+        + `${this.props.id}`, {
             "Access-Control-Allow-Origin": "*"
         }).then((response) => {
             this.setState({data: response.data})

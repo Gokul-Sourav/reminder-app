@@ -19,8 +19,7 @@ class CreateReminders extends Component {
         }
         this.onReminderDescription = this.onReminderDescription.bind(this);
         this.onReminderResponsible = this.onReminderResponsible.bind(this);
-        this.onReminderTimeHrs = this.
-        onReminderTimeHrs.bind(this);
+        this.onReminderTimeHrs = this.onReminderTimeHrs.bind(this);
         this.onReminderTimeMin = this.onReminderTimeMin.bind(this);
         this.onReminderTimePartOfDay = this.onReminderTimePartOfDay.bind(this);
         this.onReminderFrequency = this.onReminderFrequency.bind(this);
@@ -42,7 +41,8 @@ class CreateReminders extends Component {
             notes: this.state.notes
         }
 
-         axios.post('https://ki-reminder-api.herokuapp.com' + "/createTask", task).then((response) => {
+         axios.post('https://ki-reminder-api.herokuapp.com' 
+         + "/createTask", task).then((response) => {
          console.log("Response Data =", response.data)
        })
     }

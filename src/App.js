@@ -12,10 +12,6 @@ import Notes from './components/notes.component';
 require('dotenv').config();
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div>
