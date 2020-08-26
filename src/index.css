@@ -4,7 +4,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /*background-image: url('./background-img.jpg'); */
+  background-image: url('../src/background-black-blank-composition.jpg');
+  background-size: cover;
 }
 
 code {
